@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --border-size: 6px;
+            --orange: #ff4f33;
+            --blue: #31756c;
+        }
+        body{
+            background-image: url(https://wallpaperaccess.com/full/1748312.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px;
+            padding: 0px;
+        }
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+
+        }
+        #header{
+            background-image: url(https://media.discordapp.net/attachments/697233308467331113/877218525528350810/unknown.png);
+            background-repeat: repeat;
+            background-color: rgba(14, 13, 13, 0.877);
+        }
+        .logo {
+            background-image: url(natural-logo.svg);
+            background-repeat: no-repeat;
+            width: 20%;
+            height: 75px;
+            display: inline-flex;
+            flex-direction: row;
+            margin-top: 15px;
+        }
+        .button {
+            background: red;
+            color: #fff;
+            text-align: center;
+            float: right;
+        }
+        .navigation ul {
+            list-style: none;
+            display: flex;
+            padding-bottom: 10px;
+            padding-inline-start: 0px;
+        }
+        .navigation ul li {
+            padding-right: 10px;
+            /* padding-left: 5px; */
+            text-transform: uppercase;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+        }
+        .navigation ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navigation ul li a:hover {
+            color: red;
+        }
+
+        /* Top news */
+        #top_news {
+            background-color: rgb(48, 48, 48);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .news1 {
+            width: 25%;
+            height: 25%;
+            position: relative;
+            margin-left: 40px;
+            margin-right: 45px;
+            display: inline-block;
+        }
+        .news1 img {
+            max-width: 100%;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .news-title {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+
+        /* Today */
+        #today_highlights {
+            background-color: #191919;
+            margin-top: 5%;
+            border-radius: var(--border-size);
+            padding: 15px;
+        }
+        .today-title {
+            color: #fff;
+            border-left: 3px solid #f83940;
+            padding-left: 10px;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .top_games {
+            width: 23%;
+            display: inline-flex;
+            flex-direction: column;
+            background-color: #212121;
+            border-radius: var(--border-size);
+            margin-top: 1%;
+            margin-left: 0.8%;
+            margin-right: 0.9%;
+        }
+        .thumbnail {
+            text-align: center;
+            padding: 11px 11px 0px 11px;
+        }
+        .top-title {
+            color: #fff;
+            padding-left: 10px;
+        }
+        .top-desc {
+            color: rgb(173 173 173);
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo"></div>
+            <div class="button">
+                <a href="#">
+                    Регистрация
+                </a>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="#">Начало</a></li>
+                        <li><a href="#">Новини</a></li>
+                        <li><a href="#">За нас</a></li>
+                        <li><a href="#">Видео</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div id="top_news">
+            <div class="news1">
+                <img src="https://logopond.com/logos/c1bd8979bda6ec9cbb1c0240892bac5c.png" alt="" />
+                <h2 class="news-title">Новина за играта</h2>
+            </div>
+
+            <div class="news1">
+                <img src="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo.png" alt="" />
+                <h2 class="news-title">Новина за играта</h2>
+            </div>
+
+            <div class="news1">
+                <img src="https://1000logos.net/wp-content/uploads/2017/12/CSGO-Symbol-500x281.jpg" alt="" />
+                <h2 class="news-title">Новина за играта</h2>
+            </div>
+        </div>
+
+        <div id="today_highlights" class="gray-color">
+            <div class="today-title">
+               <h2>Новини днес</h2>
+            </div>
+            <div class="top_games">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://www.fifplay.com/img/public/fifa-21-logo-white.png" alt="" />
+                </div>
+                <div class="top-title">
+                    <h2>League of legends</h2>
+                </div>
+                <div class="top-desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nihil, vitae dolores quos minus voluptate voluptatibus cum eligendi optio quas laudantium aperiam magnam possimus fuga quasi. Libero totam suscipit officia.<p>
+                </div>
+
+            </div>
+
+            <div class="top_games">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo.png" alt="">
+                </div>
+                <div class="top-title">
+                    <h2>League of legends</h2>
+                </div>
+                <div class="top-desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nihil, vitae dolores quos minus voluptate voluptatibus cum eligendi optio quas laudantium aperiam magnam possimus fuga quasi. Libero totam suscipit officia.<p>
+                </div>
+
+            </div>
+
+
+            <div class="top_games">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://1000logos.net/wp-content/uploads/2017/12/CSGO-Symbol-500x281.jpg" alt="">
+                </div>
+                <div class="top-title">
+                    <h2>League of legends</h2>
+                </div>
+                <div class="top-desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nihil, vitae dolores quos minus voluptate voluptatibus cum eligendi optio quas laudantium aperiam magnam possimus fuga quasi. Libero totam suscipit officia.<p>
+                </div>
+
+            </div>
+
+            <div class="top_games">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://www.fifplay.com/img/public/fifa-21-logo-white.png" alt="">
+                </div>
+                <div class="top-title">
+                    <h2>League of legends</h2>
+                </div>
+                <div class="top-desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nihil, vitae dolores quos minus voluptate voluptatibus cum eligendi optio quas laudantium aperiam magnam possimus fuga quasi. Libero totam suscipit officia.<p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+</html>
